@@ -16,7 +16,6 @@ class SessionsController < ApplicationController
   end  
 
   def destroy
-    puts "chegou no destroy"
     log_out
     redirect_to root_url
   end
