@@ -5,5 +5,8 @@ Rails.application.routes.draw do
   post   '/login',   to: 'sessions#create'
   delete '/logout',  to: 'sessions#destroy'
   get    '/logout',  to: 'sessions#destroy'
+  get    '/messages', to: 'messages#home'
+  get    '/sucesso', to: 'messages#sucesso'
+  get    '/error', to: 'messages#error'
   resources :users
 end
